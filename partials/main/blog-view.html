@@ -1,0 +1,18 @@
+	<div class="tile" ng-class="{'quarter-width': post.basis == 4, 'third-width': post.basis == 3, 'half-width': post.basis == 2}" ng-repeat="post in posts | filter:{category:activeView} | filter:{subcategory: activeSubview} | orderBy:sortPostsBy:reverseSort">
+		
+		<tile-preview postid="{{post.postid}}" 
+			titleclick="activateReader({arg: post.postid})"
+			categoryclick="setSortPostsBy({arg: 'category'})" 
+			dateclick="setSortPostsBy({arg: 'date'})">
+		</tile-preview>
+
+	</div>
+
+<!-- 	<div
+		class="show-more tile"
+		ng-click="showMore()">	
+		<div class="tile-main show-more-main">
+			<h3>Show more...</h3>
+		</div>	
+	</div>
+	 -->

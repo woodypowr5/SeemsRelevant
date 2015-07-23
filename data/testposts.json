@@ -1,0 +1,88 @@
+[
+	{
+		"postid": 0,
+		"title": "Welcome to SeemsRelevant!",
+		"preview": "Welcome to my new website. I'm Chris Woodward, an aspiring professional coder/web developer from Redding, CA. The motives behind creating this blog were simple: to document solutions to problems that I encountered during web development and to interact and network with other developers. Since personal blogs and articles have been a huge source of realizations in the process of learning about coding and development, I figured that I would offer my two cents, and hopefully give someone the creative insight that they were searching for. Take a look around, and hopefully you can find something useful that will help you on your next project. ",
+		"category": "blog",
+		"subcategory": "personal",
+		"date": "May 19, 2015",
+		"basis": 2,
+		"minwidth": "33.33333%",
+		"maxwidth": "66.66666%",
+		"template": "posts/1.html"
+	},
+	{
+		"postid": 1,
+		"title": "Code this Website",
+		"preview": "One of the benefits of creating this site was that it forced me to learn the process of WebApp development from the ground up, from ideation to deployment. I am going to document this process through a series of posts in the Projects section. To start it will be a purely front-end implementation, and will utilize AngularJS. If you've been wondering about angular or SPAs in general, check it out! ",
+		"category": "projects",
+		"subcategory": "personal",
+		"date": "May 20, 2015",
+		"basis": 4,
+		"minwidth": "33.33333%",
+		"maxwidth": 3,
+		"template": "posts/0.html"
+	},
+	{
+		"postid": 2,
+		"title": "AngularJS Quick Intro",
+		"preview": "Heard about AngularJS, but haven't made the leap into learning a whole other framework (again)? I am going to outline the stuff that makes AngularJS so awesome, without diving into the code too much just yet. I'll provide as many interactive examples as I can.",
+		"category": "blog",
+		"subcategory": "coding",
+		"date": "May 21, 2015",
+		"basis": 3,
+		"minwidth": "33.33333",
+		"maxwidth": 3,
+		"template": "posts/0.html"
+	},
+	
+	{
+		"postid": 3,
+		"title": "Dynamic SVG with AngularJS",
+		"preview": "Ever wanted to create infinitely scalable images that draw themselves and/or react dynamically to changes in parameters that they are passed? Well, I just decided to tackle this problem using Angular directives, and the result was pretty awesome, and immediately opened my mind to a new world of possibilities.",
+		"category": "projects",
+		"subcategory": "personal",
+		"date": "May 23, 2015",
+		"basis": 4,
+		"minwidth": 2,
+		"maxwidth": 3,
+		"template": "posts/0.html"
+	},
+	{
+		"postid": 4,
+		"title": "Unit Testing AngularJS Apps",
+		"preview": "I will be using adding an awesome tesing library, Jasmine, to my SPA in order to increase the maintainability and orthogonality. If you aren't sure what I just said, don't worry, I just learned it too, so read on!",
+		"category": "about",
+		"subcategory": "interests",
+		"date": "May 24, 2015",
+		"basis": 2,
+		"minwidth": 1,
+		"maxwidth": 2,
+		"template": "posts/0.html"
+	},
+	{
+		"postid": 5,
+		"title": "Photography Page Coming Soon",
+		"preview": "For anyone who is interested in that stuff",
+		"category": "about",
+		"subcategory": "interests",
+		"date": "May 25, 2015",
+		"basis": 4,
+		"minwidth": 1,
+		"maxwidth": 2,
+		"template": "posts/0.html"
+	},
+	{
+		"postid": 6,
+		"title": "Sorting Algorthm Visualization",
+		"preview": "I've always been really intrigued by good visualzations of common concepts/problems, especially when they allow one to intuitively understand complex/difficult concepts. I've always also thought sorting algorithms are pretty cool, and for a while I have been toying with the idea of creating interesting visualizations of sorting algorithms in order to help decribe the algorithms in different ways that people may be used to. ",
+		"category": "projects",
+		"subcategory": "personal",
+		"date": "May 1, 2015",
+		"basis": 3,
+		"minwidth": 1,
+		"maxwidth": 3,
+		"template": "posts/0.html"
+	}
+
+]

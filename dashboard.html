@@ -1,0 +1,161 @@
+
+ 	<!--[if IE]>
+	<script src="js/dealwithie.js"></script>
+	<![endif]-->
+
+		<!-- HEADER VIEWS -->
+		<div class="header flex">
+			
+			<div class="header-title">
+				<h1 id="main-title" class="title">SeemsRelevant</h1>
+			</div>
+			
+			<div class="header-main">
+				<div 
+					ng-show="activeView === 'home'"
+            		ng-include="'partials/header/main/header-main-home-view.html'"
+            		class="header-main-home-view header-main-view flex">
+				</div>
+				<div
+					ng-show="activeView === 'blog'" 
+            		ng-include="'partials/header/main/header-main-blog-view.html'"
+            		class="header-main-blog-view header-main-view flex">
+				</div>
+				<div 
+					ng-show="activeView === 'projects'"
+            		ng-include="'partials/header/main/header-main-projects-view.html'"
+            		class="header-main-projects-view header-main-view flex">
+				</div>
+				<div 
+					ng-show="activeView === 'about'"
+            		ng-include="'partials/header/main/header-main-about-view.html'"
+            		class="header-main-about-view header-main-view flex">
+				</div>
+				<div 
+					ng-show="activeView === 'photography'"
+            		ng-include="'partials/header/main/header-main-photography-view.html'"
+            		class="header-main-photography-view header-main-view flex">
+				</div>
+					<div 
+					ng-show="activeView === 'portfolio'"
+            		ng-include="'partials/header/main/header-main-portfolio-view.html'"
+            		class="header-main-portfolio-view header-main-view flex">
+				</div>
+			</div>
+				
+			<div class="header-nav nav-link-trans">
+				<span 
+            		ng-show="activeView === 'home'" 
+            		ng-include="'partials/header/nav/root-nav-menu.html'"
+            		class="header-nav-view row">
+				</span>
+				<span 
+            		ng-show="activeView === 'blog'" 
+            		ng-include="'partials/header/nav/nav-blog-view.html'"
+            		class="header-nav-view row">
+				</span>
+				<span 
+            		ng-show="activeView === 'projects'" 
+            		ng-include="'partials/header/nav/nav-projects-view.html'"
+            		class="header-nav-view row">
+				</span>
+				<span 
+            		ng-show="activeView === 'about'" 
+            		ng-include="'partials/header/nav/nav-about-view.html'"
+            		class="header-nav-view row">
+				</span>
+				<span 
+            		ng-show="activeView === 'photography'" 
+            		ng-include="'partials/header/nav/nav-about-view.html'"
+            		class="header-nav-view row">
+				</span>
+				<span 
+            		ng-show="activeView === 'portfolio'" 
+            		ng-include="'partials/header/nav/nav-about-view.html'"
+            		class="header-nav-view row">
+				</span>
+			</div>
+			<a id="pagetop"></a>
+		</div> <!-- header --> 
+	
+		<!-- MAIN VIEWS -->
+		<div class="main flex">
+			<div 
+				ng-show="readerActive === true" 
+				class="reader-wrapper fade-in"
+				ng-class="{'portfolio-reader-wrapper':activeView == 'portfolio'}">
+
+				<div
+					ng-show="readerActive === true || activeView =='about' || activeView == 'portfolio'" 
+					ng-include="readerTemplate"
+					class="reader-template row no-gutter fade-in"
+					ng-class="{'portfolio-reader':($scope.activeView === 'portfolio')}">
+				</div>
+			
+				<div 
+					class="close-reader"
+					ng-hide="activeView =='portfolio'"
+					ng-click="closeReader()">
+					[X] Close
+				</div>
+
+			</div>
+
+			<!-- TILES VIEWS -->
+			<div 
+        		ng-show="activeView === 'home'" 
+        		ng-include="'partials/main/home-view.html'"
+        		class="header-nav-view tiles flex">
+        		
+			</div>
+			<div 
+        		ng-show="activeView === 'blog'" 
+        		ng-include="'partials/main/blog-view.html'"
+        		class="header-nav-view tiles flex">
+        	
+			</div>
+			<div 
+        		ng-show="activeView === 'projects'" 
+        		ng-include="'partials/main/projects-view.html'"
+        		class="header-nav-view tiles flex">
+        	
+			</div>
+			<div 
+        		ng-show="activeView === 'about'" 
+        		ng-include="'partials/main/about-view.html'"
+        		class="header-nav-view tiles flex">
+			</div>
+			<div 
+        		ng-show="activeView === 'photography'" 
+        		ng-include="'partials/main/photography-view.html'"
+        		class="header-nav-view tiles image-tiles flex"> 		
+			</div>
+		</div> <!-- main -->			
+
+		<!-- FOOTER -->
+		<div class="footer row no-gutter">
+			<div class="footer-social footer-tile flex col-xs-12 col-sm-4">
+				<span class="social-icon" id="social-icon-1">
+					<a href="https://www.facebook.com/woodward"> <img src="assets/icons/facebook.png" alt=""></a>
+				</span>
+				<span class="social-icon" id="social-icon-2">
+					<a href="https://plus.google.com/u/0/101087202011285792434"><img src="assets/icons/google.png" alt=""></a>
+				</span>
+				<span class="social-icon" id="social-icon-3">
+					<a href="http://www.linkedin.com/in/cwoodward5"><img src="assets/icons/linkedin.png" alt=""></a>	
+				</span>
+				<span class="social-icon" id="social-icon-4">
+					<a href="https://www.twitter.com/woodypowr5"><img src="assets/icons/twitter.png" alt=""></a>	
+				</span>
+				<span class="social-icon" id="social-icon-5">
+					<a href="mailto:cwoodward5@hotmail.com"><img src="assets/icons/email.png" alt=""></a>	
+				</span>
+			</div>
+			<div class="footer-email footer-tile col-xs-12 col-sm-8">
+				<h6>Site design and coding by Chris Woodward</h6>
+				<h6>Have a question or comment? Email me at <a href="mailto:cwoodward5@hotmail.com" target="_top">cwoodward5@hotmail.com!</a></h6>
+			</div>
+		</div> <!-- footer -->
+		
+
+	

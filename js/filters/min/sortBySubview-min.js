@@ -1,0 +1,1 @@
+app.filter("sortBySubview",function(){return function(n,r){var t=[];return angular.forEach(n,function(n){n.category==r?t.unshift(n):t.push(n)}),t}});

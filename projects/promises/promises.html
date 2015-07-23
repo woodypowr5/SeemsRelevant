@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="sortingApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript Promises</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/promises.css">
+     
+    <!-- Angular Scripts -->
+    <script src="../js/libraries/angular/angular.js"></script>
+    <script src="../js/libraries/angular/angular-route.min.js"></script>
+
+    <!-- Object definitions -->
+    <script src="js/node.js"></script>    
+
+    <!-- Our scripts -->
+    <script src="js/app.js"></script>   
+    <script src="js/controllers/MainCtrl.js"></script>
+    <!--<script src="js/directives/nodeDisplay.js"></script>-->
+    <script src="js/directives/draggable.js"></script>
+
+</head>
+
+<h2>This project is under construction...</h2>
+<p>
+    I will be devleoping this page over the nnext few weeks, so you may find it in various stages of construction. Check back soon! 
+</p>
+
+<body class="fluid-container" ng-controller="MainCtrl">
+
+<div class="a" nodeid="0" draggable>
+    ID: {{nodes[0].id}}
+    xpos: {{nodes[0].xpos}}
+    ypos: {{nodes[0].ypos}}
+<div/> 
+
+<div class="b" nodeid="1" draggable>
+    ID: {{nodes[1].id}}
+    xpos: {{nodes[1].xpos}}
+    ypos: {{nodes[1].ypos}}
+<div/> 
+
+</body>
+</html>

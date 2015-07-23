@@ -1,0 +1,1 @@
+var app=angular.module("mainApp",["ngRoute"]);app.config(["$locationProvider","$routeProvider",function(r,e,t){r.html5Mode(!0),e.when("/",{templateUrl:"dashboard.html",controller:"MainCtrl"}).when("/posts",{templateUrl:"dashboard.html",controller:"MainCtrl",resolve:{directUrl:function(r){return!0}}}).otherwise({redirectTo:"/test"})}]);

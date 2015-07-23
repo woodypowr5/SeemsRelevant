@@ -1,0 +1,15 @@
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="broadcastNavClick('home'); setActiveSubview('')">Home</h2>
+</div>
+
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="setActiveSubview('aboutme'); activateReaderWithUrl('data/posts/aboutme.html')" ng-class="{'active-nav-link': activeSubview == 'aboutme'}">About me</h2>
+</div>
+
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="setActiveSubview('interests'); activateReaderWithUrl('data/posts/interests.html')" ng-class="{'active-nav-link': activeSubview == 'interests'}">Interests</h2>
+</div>
+
+<div class="header-nav-link hidden-xs col-sm-3">
+	<h2 ng-click="setActiveSubview('contact'); activateReaderWithUrl('data/posts/contact.html')" ng-class="{'active-nav-link': activeSubview == 'contact'}">Contact</h2>
+</div>

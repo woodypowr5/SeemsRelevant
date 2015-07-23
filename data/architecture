@@ -1,0 +1,54 @@
+
+FILES:
+
+	Posts.json
+
+		id			int primary
+		title		text
+		preview		html		
+		media		obj
+			.id
+			.classes
+		category
+		subcategory
+		date
+		meta
+		template	full article html
+
+
+POSTS EXAMPLE:
+
+[
+	{
+		"postid": 1,
+		"title": "Visualizing Sorting Algorithms",
+		"preview": "Preview text here. Wasn't that an awesome experience?",
+		"category": "blog",
+		"subcategory": "life",
+		"date": "2015-05-15",
+		"template": "tiles/1.html"
+	},
+		{
+		"postid": 2,
+		"title": "Dynamic SVG in AngularJS",
+		"preview": "SVGs are awesome. Angular makes them easier.",
+		"category": "blog",
+		"subcategory": "AngularJS",
+		"date": "2015-05-15",
+		"template": "tiles/2.html"
+	}
+]
+
+
+
+
+	Media.json
+
+		id			int primary
+		caption		text
+		location	filepath
+
+
+"If Pac-Man had affected us as kids, we'd all be running around in dark rooms, munching pills and listening to repetitive electronic music." --Marcus Alexander Brigstocke
+
+If builders built buildings the way programmers wrote programs, the first woodpecker that came along would destroy civilization.

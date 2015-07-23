@@ -1,0 +1,65 @@
+<h6>Posted 08 June 2015</h4>
+
+<h2 class="post-title">Prism.JS: Sweet, simple syntax highlighting for Web presentation</h2>
+
+<p>
+	I was starting to write a post about AngularJS, and I realized that I hadn't figured out a simple, good-looking way of displaying code snippets on an html page. So I set out to do a little Googling...
+</p>
+
+<h4 class="heading">Online vs Plugin</h4>
+
+<p>
+	There are several webapps that can be used by pasting in the code that you'd like to display, settting a few options, and then copy/pasting the generated code into your own project. This type of service may be fine for many uses, but it lacks any real robustness and is a maintenance nightmare, as it often relies on inline styling to color and style the generated html. You should have learned on, nbsp;like, week two of Intro to CS class that inline styles are bad (almost) all of the time.
+</p>
+
+<p>
+	The method that I thought would be better suited for a site like SeemsRelevant is to use a JavaScript plugin. There is a plugin available called PrismJS which uses a very small (2KB) library and a css stylesheet to set the options for and style the snippets. The advantage of using a css-centric plugin is that you can use the css cascade and inheritance to control the styling of the snippets. 
+</p>
+
+<p>
+	For example, assume that I have a couple lines of code:
+	
+</p>
+<pre class="language-markup"><code class="language-markup">//i'm a comment
+var a = "i'm a variable";
+</code></pre>	
+
+<p>
+	Let's say that I want the comment to be red, but not the rest of the code. Well, Prism.js provides several "tokens," which are just the .token css class and a descriptor class (like "comment," for example) as defined in prism.css. Some other avaible tokens include "number," "variable" and many others. To change the color of a certain token, simply override the default style by targeting .token.comment and set color:red and then wrap the text you want colored in a span element and give it a class of .token and .comment (or you could overwrite the defaults where they were previously declared, but then you can't go back if you make a mistake). This results in the following rendered snippet:
+
+</p>
+
+<!-- <pre class="language-markup"><code class="language-markup">
+<span class="token tag"><span class="token tag"><span class="token punctuation"><</span>span class="token comment"</span><span class="token punctuation">></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation"><</span>span</span><span class="token punctuation">></span>
+</code></pre>
+ -->
+
+<!-- <p>This results in an output of the following:</p> -->
+
+
+<pre class="language-markup"><code class="language-markup"><span class="token tag white"><span class="token tag white"><span class="token punctuation white"><</span>span class="token comment"</span><span class="token punctuation white ">></span>
+	</span><span class="token comment red">// i'm a comment</span><span class="token tag">
+<span class="token tag white"><span class="token punctuation white"><</span>/span</span><span class="token punctuation white">></span>
+</span>var a = "i'm a variable";
+</code></pre>
+
+<figcaption class="code-caption">
+	All I did was add the following to the prism.css file:&nbsp;&nbsp;.token.comment{color:red;}
+</figcaption> 
+
+<p>
+	This complete control over any of the css properties of any part of the text we like can add some very powerful functionality and control to anyone who needs to make their code look slick online. It allowed me to very easily make a color scheme that I think works well with the site:   	
+</p>
+
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Here is an example of Prism.js in use</span>
+<span class="token number">var</span> robot = <span class="token keyword">"i'm a robot"</span>;
+<span class="token number">var</span> shapeshift = <span class="token number">function</span>(){
+	robot = <span class="token keyword">"i'm a horseradish"</span>;
+}
+</code></pre>
+
+<p>
+	Thanks to the maker of this excellent little tool, Lea Verou, for keeping it free for all to use. It can be found at <a href="http://prismjs.com/download.html">prismjs.com</a>. Check it out!
+</p>
+<hr class="end-break">

@@ -1,0 +1,69 @@
+.header-nav-link{
+	position: relative;
+	h2{	
+		font-size: 0.9em;
+        text-align: center;
+		// position: absolute;
+  //       top: 50%;
+  //       left: 50%;
+  //       margin-right: -50%;
+  //       transform: translate(-50%, 0);
+		color: lighten(gray, 10);
+	}
+    .left-nav-arrow{
+        font-size: 2em;
+        position: absolute;
+        left:-33px;
+        top: -4px;
+    }
+
+}
+.header-nav-link h2:hover{
+    cursor: pointer;
+    color: lighten(gray, 25);
+}
+.header-nav-link h2.active-nav-link{
+    color: white;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .header-nav-link{
+    	h2{
+			font-size: 1.2em;
+    	}
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.header-nav-link{      	
+
+    	h2{
+			font-size: 1.3em;
+			line-height: 0.85em;
+    	}
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.header-nav-link{        	
+    	h2{
+			font-size: 1.5em;
+			line-height: 0.75em;
+    	}
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+

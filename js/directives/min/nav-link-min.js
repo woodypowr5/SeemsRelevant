@@ -1,0 +1,1 @@
+app.directive("navLink",function(){return{restrict:"EA",replace:!0,link:function(i,e,t){var n=t.title,c=t.value,r="<div ng-click=\"activeView = '"+c+"'\">"+n+"</div>";e.html(r)}}});

@@ -1,0 +1,18 @@
+
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="broadcastNavClick('home'); setActiveSubview('')">Home</h2>
+</div>
+
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="setActiveSubview('coding')" ng-class="{'active-nav-link': activeSubview == 'coding'}">Coding</h2>
+</div>
+
+<div class="header-nav-link col-xs-4 col-sm-3">
+	<h2 ng-click="setActiveSubview('personal')" ng-class="{'active-nav-link': activeSubview == 'personal'}">Personal</h2>
+</div>
+
+
+<div class="header-nav-link hidden-xs col-sm-3">
+	<h2 ng-click="setActiveSubview('interesting')" ng-class="{'active-nav-link': activeSubview == 'interesting'}">Interesting</h2>
+</div>
+

@@ -1,0 +1,1 @@
+app.directive("resizeDetect",function(e){return{link:function(n,i,t){angular.element(e).on("resize",function(e){n.$apply(function(){n.resizeCanvas(i)})})}}});
